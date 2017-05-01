@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/01/markdown语法插入代码/index.html">
 <meta property="og:site_name" content="FaithofL's Wonderland">
 <meta property="og:description" content="Copy from the web page about the markdown syntex. Let’s see how html would render these codes.代码 如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：1Use the `printf()` function. Use the printf() function.会产生：1&amp;lt;p&amp;gt;U">
-<meta property="og:updated_time" content="2017-05-01T02:54:25.300Z">
+<meta property="og:updated_time" content="2017-05-01T03:54:49.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法插入代码">
 <meta name="twitter:description" content="Copy from the web page about the markdown syntex. Let’s see how html would render these codes.代码 如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：1Use the `printf()` function. Use the printf() function.会产生：1&amp;lt;p&amp;gt;U">
@@ -106,6 +106,8 @@
 <p>A single backtick in a code span: <code>`</code></p>
 
 <p>A backtick-delimited string in a code span: <code><code>foo</code></code></p><br>在代码区段内，&amp; 和尖括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Please don&apos;t use any `&lt;blink&gt;` tags.</div><div class="line">转为：</div><div class="line"></div><div class="line">&lt;p&gt;Please don&apos;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;</div></pre></td></tr></table></figure><br><br>Please don’t use any <code>&lt;blink&gt;</code> tags.<br>转为：<br><br><p>Please don’t use any <code>&lt;blink&gt;</code> tags.</p><br>你也可以这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.</div><div class="line">以产生：</div><div class="line"></div><div class="line">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure><br><br><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.<br>以产生：<br><br><p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Tips:</div><div class="line">1. The code format: &#123;xxxx&#125; cannot show through the syntex ` ` or `` ``</div></pre></td></tr></table></figure>
 
       
     </div>
