@@ -12,13 +12,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/30/资源文件夹与插入图片/index.html">
 <meta property="og:site_name" content="FaithofL's Wonderland">
 <meta property="og:description" content="资源文件夹功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。 12_config.ymlpost_asset_folder: true 当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new [layout]  命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的">
-<meta property="og:image" content="http://yoursite.com/example.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/04/30/资源文件夹与插入图片/通过标签插件引用资源.png">
-<meta property="og:updated_time" content="2017-04-30T09:23:20.674Z">
+<meta property="og:updated_time" content="2017-05-01T02:18:09.787Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="资源文件夹与插入图片">
 <meta name="twitter:description" content="资源文件夹功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。 12_config.ymlpost_asset_folder: true 当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new [layout]  命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的">
-<meta name="twitter:image" content="http://yoursite.com/example.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2017/04/30/资源文件夹与插入图片/通过标签插件引用资源.png">
   
     <link rel="alternate" href="/atom.xml" title="FaithofL&#39;s Wonderland" type="application/atom+xml">
   
@@ -99,7 +98,7 @@
 <h3 id="用标签插件插入图片"><a href="#用标签插件插入图片" class="headerlink" title="用标签插件插入图片"></a>用标签插件插入图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">｛% asset_img slug [title] %｝</div></pre></td></tr></table></figure>
 <p>例如：当你打开文章资源文件夹功能后，你把一个 example.jpg 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法</p>
 <blockquote>
-<p>/<img src="/example.jpg" alt=""></p>
+<p>!<a href="/example.jpg"></a></p>
 </blockquote>
 <p>它将 不会 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
 <p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_img example.jpg This is an example image %&#125;</div></pre></td></tr></table></figure></p>
