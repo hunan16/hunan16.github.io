@@ -5,17 +5,17 @@
   
   <title>My First Frustrated Debug Experience | FaithofL&#39;s Wonderland</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error‘’’File “C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py”, line">
+  <meta name="description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error12345 File &amp;quot;C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My First Frustrated Debug Experience">
 <meta property="og:url" content="http://yoursite.com/2017/08/15/My-First-Frustrated-Debug-Experience/index.html">
 <meta property="og:site_name" content="FaithofL's Wonderland">
-<meta property="og:description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error‘’’File “C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py”, line">
-<meta property="og:updated_time" content="2017-08-15T15:42:26.639Z">
+<meta property="og:description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error12345 File &amp;quot;C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py">
+<meta property="og:updated_time" content="2017-08-15T16:03:52.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My First Frustrated Debug Experience">
-<meta name="twitter:description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error‘’’File “C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py”, line">
+<meta name="twitter:description" content="I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error12345 File &amp;quot;C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py">
   
     <link rel="alternate" href="/atom.xml" title="FaithofL&#39;s Wonderland" type="application/atom+xml">
   
@@ -90,19 +90,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error<br>‘’’<br>File “C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py”, line 10, in <module><br>  import pandas as pd<br>File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\pandas__init__.py”, line 19, in <module><br>  “Missing required dependencies {0}”.format(missing_dependencies))<br>ImportError: Missing required dependencies [‘numpy’]<br>‘’’</module></module></p>
-<p>then I tried this<br>‘’’</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import numpy<br>Traceback (most recent call last):<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\core__init__.py”, line 16, in <module><br>    from . import multiarray<br>ImportError: DLL load failed: 找不到指定的程序。</module></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):<br>  File “<pyshell#0>“, line 1, in <module><br>    import numpy<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy__init<strong>.py”, line 142, in <module><br>    from . import add_newdocs<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\add_newdocs.py”, line 13, in <module><br>    from numpy.lib import add_newdoc<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\lib\</module></module></strong>init<strong>.py”, line 8, in <module><br>    from .type_check import *<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\lib\type_check.py”, line 11, in <module><br>    import numpy.core.numeric as _nx<br>  File “C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\core\</module></module></strong>init__.py”, line 26, in <module><br>    raise ImportError(msg)<br>ImportError:<br>Importing the multiarray numpy extension module failed.  Most<br>likely you are trying to import a failed build of numpy.<br>If you’re working with a numpy git repo, try <code>git clean -xdf</code> (removes all<br>files not under version control).  Otherwise reinstall numpy.</module></module></pyshell#0></p>
-<p>Original error was: DLL load failed: 找不到指定的程序。</p>
-<p>‘’’<br>However there is appearently nothing wrong with my installation because with “pip list” I got this<br></p>
+        <p>I have successfully installed the numpy and pandas as extended package with “pip install xxx”, but when I run the program there is an error<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> File &quot;C:\Adocument\hnxpy\hwofcsdn\hw1byopenpyxl.py&quot;, line 10, in &lt;module&gt;</div><div class="line">  import pandas as pd</div><div class="line">File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\pandas\__init__.py&quot;, line 19, in &lt;module&gt;</div><div class="line">  &quot;Missing required dependencies &#123;0&#125;&quot;.format(missing_dependencies))</div><div class="line">ImportError: Missing required dependencies [&apos;numpy&apos;]</div></pre></td></tr></table></figure></p>
+<p>then I tried this </p>
+<pre><code> &gt;&gt;&gt; import numpy
+Traceback (most recent call last):
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\core\__init__.py&quot;, line 16, in &lt;module&gt;
+    from . import multiarray
+ImportError: DLL load failed: 找不到指定的程序。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#0&gt;&quot;, line 1, in &lt;module&gt;
+    import numpy
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\__init__.py&quot;, line 142, in &lt;module&gt;
+    from . import add_newdocs
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\add_newdocs.py&quot;, line 13, in &lt;module&gt;
+    from numpy.lib import add_newdoc
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\lib\__init__.py&quot;, line 8, in &lt;module&gt;
+    from .type_check import *
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\lib\type_check.py&quot;, line 11, in &lt;module&gt;
+    import numpy.core.numeric as _nx
+  File &quot;C:\Users\Q\AppData\Local\Programs\Python\Python36\lib\site-packages\numpy\core\__init__.py&quot;, line 26, in &lt;module&gt;
+    raise ImportError(msg)
+ImportError: 
+Importing the multiarray numpy extension module failed.  Most
+likely you are trying to import a failed build of numpy.
+If you&apos;re working with a numpy git repo, try `git clean -xdf` (removes all
+files not under version control).  Otherwise reinstall numpy.
+
+Original error was: DLL load failed: 找不到指定的程序。
+</code></pre><p>However there is appearently nothing wrong with my installation because with “pip list” I got this<br></p>
 <p>There is numpy and pandas on the list! They just won’t work!</p>
 <p>After repeated installation and uninstallation I decide to give up and begin to install the Anaconda.<br>That’s all.</p>
 <p>God bless.</p>
